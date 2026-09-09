@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gurraz Kaur — BSc Biotechnology student portfolio">
+<title>Gurraz Kaur | Bio × Tech Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#070811; --panel:rgba(18,19,34,.72); --gold:#e9c46a; --gold2:#ffe8a3;
+  --violet:#8b7cff; --pink:#e58cff; --text:#f8f7ff; --muted:#b9b8c9;
+  --line:rgba(255,255,255,.11); --shadow:0 25px 80px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,system-ui,sans-serif;background:
+  radial-gradient(circle at 80% 10%,rgba(139,124,255,.18),transparent 28rem),
+  radial-gradient(circle at 10% 35%,rgba(229,140,255,.12),transparent 25rem),var(--bg);
+  color:var(--text);overflow-x:hidden;
+}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;
+ background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+ linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:45px 45px}
+a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+nav{position:fixed;z-index:50;top:18px;left:50%;transform:translateX(-50%);width:min(1050px,92%);
+ display:flex;align-items:center;justify-content:space-between;padding:13px 17px;border:1px solid var(--line);
+ background:rgba(7,8,17,.65);backdrop-filter:blur(18px);border-radius:999px;box-shadow:var(--shadow)}
+.logo{font-family:Cinzel,serif;color:var(--gold);font-weight:700}.navlinks{display:flex;gap:20px;font-size:13px;color:#ddd}
+.navlinks a:hover{color:var(--gold2)}
+.hero{min-height:100vh;display:grid;place-items:center;position:relative;padding:110px 0 70px;overflow:hidden}
+.stars,.stars:before,.stars:after{position:absolute;inset:0;content:"";pointer-events:none}
+.stars{background-image:radial-gradient(2px 2px at 12% 20%,#fff,transparent),radial-gradient(1.5px 1.5px at 30% 72%,#fff,transparent),radial-gradient(2px 2px at 75% 18%,#fff,transparent),radial-gradient(1px 1px at 87% 62%,#fff,transparent),radial-gradient(2px 2px at 60% 82%,#fff,transparent);animation:twinkle 4s ease-in-out infinite alternate}
+@keyframes twinkle{to{opacity:.45;transform:scale(1.02)}}
+.moon{position:absolute;width:150px;height:150px;border-radius:50%;right:8%;top:15%;background:#fff7d0;box-shadow:0 0 70px rgba(255,237,163,.45);opacity:.9}
+.castle{position:absolute;bottom:-20px;left:0;width:100%;height:260px;opacity:.7;filter:drop-shadow(0 -10px 35px rgba(139,124,255,.2))}
+.castle:before{content:"";position:absolute;bottom:0;left:0;width:100%;height:180px;background:#111326;
+clip-path:polygon(0 100%,0 72%,8% 72%,8% 48%,12% 48%,12% 68%,18% 68%,18% 30%,23% 30%,23% 65%,28% 65%,28% 40%,34% 40%,34% 70%,40% 70%,40% 22%,45% 22%,45% 62%,50% 62%,50% 35%,56% 35%,56% 65%,62% 65%,62% 45%,68% 45%,68% 70%,74% 70%,74% 27%,80% 27%,80% 62%,86% 62%,86% 38%,92% 38%,92% 68%,100% 68%,100% 100%)}
+.castle:after{content:"✦  ✧     ✦   ✧       ✦      ✧   ✦";position:absolute;left:10%;right:10%;bottom:90px;color:#ffe9a6;letter-spacing:55px;font-size:18px;animation:magic 3s infinite alternate}
+@keyframes magic{to{opacity:.35;transform:translateY(-8px)}}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:45px;align-items:center;position:relative;z-index:2}
+.eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid rgba(233,196,106,.3);background:rgba(233,196,106,.07);padding:8px 13px;border-radius:999px;color:var(--gold2);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+h1{font-family:Cinzel,serif;font-size:clamp(3rem,7vw,6.3rem);line-height:.95;margin:22px 0 20px}
+.gradient{background:linear-gradient(100deg,#fff,var(--gold2),#b7a9ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:18px;line-height:1.75;color:var(--muted);max-width:650px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:13px 18px;border-radius:14px;border:1px solid var(--line);font-weight:700;font-size:14px;transition:.25s}
+.btn.primary{background:linear-gradient(135deg,var(--gold),#c99b38);color:#18130a;border:0}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.magic-card{min-height:430px;border:1px solid var(--line);border-radius:30px;background:linear-gradient(145deg,rgba(25,26,48,.78),rgba(11,12,25,.5));
+backdrop-filter:blur(15px);box-shadow:var(--shadow);position:relative;overflow:hidden;display:grid;place-items:center}
+.magic-card:before{content:"";position:absolute;width:250px;height:250px;border-radius:50%;background:rgba(139,124,255,.22);filter:blur(50px);top:-60px;right:-50px}
+.tenor-wrap{width:min(90%,430px);z-index:2;border-radius:20px;overflow:hidden;box-shadow:0 0 45px rgba(139,124,255,.2)}
+.card-caption{position:absolute;bottom:17px;left:20px;right:20px;display:flex;justify-content:space-between;color:#d9d6eb;font-size:12px}
+section{padding:100px 0}.section-head{margin-bottom:35px}.kicker{color:var(--gold);font-size:12px;text-transform:uppercase;letter-spacing:.18em;font-weight:800}
+h2{font-family:Cinzel,serif;font-size:clamp(2rem,4vw,3.5rem);margin-top:8px} .sub{color:var(--muted);line-height:1.7;max-width:720px;margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border:1px solid var(--line);background:var(--panel);backdrop-filter:blur(15px);border-radius:22px;padding:25px;transition:.3s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-8px);border-color:rgba(233,196,106,.4);box-shadow:var(--shadow)}
+.icon{font-size:28px;margin-bottom:16px}.card h3{margin-bottom:9px}.card p{color:var(--muted);line-height:1.65;font-size:14px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.pill{font-size:11px;padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line);color:#ddd}
+.timeline{position:relative;padding-left:28px;border-left:1px solid rgba(233,196,106,.3)}.timeline-item{margin:0 0 30px;position:relative}.timeline-item:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--gold);left:-34px;top:7px;box-shadow:0 0 18px var(--gold)}
+.timeline-item h3{margin-bottom:7px}.timeline-item p{color:var(--muted);line-height:1.7}
+.lab{display:grid;grid-template-columns:1fr 1fr;gap:20px}.lab .card{min-height:210px}
+.project{min-height:230px;display:flex;flex-direction:column;justify-content:space-between}
+.status{display:inline-block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#f4d98c;border:1px solid rgba(233,196,106,.3);padding:6px 9px;border-radius:999px;margin-bottom:14px}
+.award{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center}.medal{font-size:55px}.award strong{color:var(--gold2)}
+footer{padding:35px 0 60px;color:#8f8ea0;border-top:1px solid var(--line);font-size:13px;display:flex;justify-content:space-between;gap:15px}
+.reveal{opacity:0;transform:translateY(25px);transition:opacity .7s,transform .7s}.reveal.show{opacity:1;transform:none}
+.cursor{display:inline-block;width:8px;height:1em;background:var(--gold);vertical-align:-2px;animation:blink 1s infinite}@keyframes blink{50%{opacity:0}}
+@media(max-width:800px){.hero-grid,.lab{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.navlinks{display:none}.magic-card{min-height:340px}.moon{width:90px;height:90px}section{padding:75px 0}h1{font-size:3.3rem}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="#home">GURRAZ.</a>
+  <div class="navlinks">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+    <a href="#lab">Lab</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="stars"></div><div class="moon"></div><div class="castle"></div>
+  <div class="container hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">🧬 BSc Biotechnology · Science × Technology</span>
+      <h1>Hi, I'm <span class="gradient">Gurraz.</span></h1>
+      <p>I’m a biotechnology student exploring the space where <b>life science, laboratory work and technology</b> meet — with a little Hogwarts magic along the way.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">Explore my work ✨</a>
+        <a class="btn" href="#contact">Let's connect →</a>
+      </div>
+    </div>
+    <div class="magic-card reveal">
+      <div class="tenor-wrap">
+        <div class="tenor-gif-embed" data-postid="20336198" data-share-method="host" data-aspect-ratio="2.01613" data-width="100%">
+          <a href="https://tenor.com/view/hermione-granger-gif-20336198">Hermione Granger GIF</a>
+        </div>
+      </div>
+      <div class="card-caption"><span>📚 Hermione energy</span><span>⚡ curiosity always</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about"><div class="container">
+  <div class="section-head reveal"><div class="kicker">01 · About me</div><h2>Curious by nature.<br><span class="gradient">Scientific by choice.</span></h2>
+  <p class="sub">I’m building my foundation in biotechnology while learning how computers can amplify what we can do with biology. I like learning by actually trying things, documenting them and improving the next time.</p></div>
+  <div class="grid">
+    <article class="card reveal"><div class="icon">🧬</div><h3>Biotechnology</h3><p>Strong interest in life sciences, molecular biology, microbiology and practical laboratory learning.</p></article>
+    <article class="card reveal"><div class="icon">💻</div><h3>Science × Computer</h3><p>Alongside science, I’ve explored computer fundamentals and programming concepts including Java.</p></article>
+    <article class="card reveal"><div class="icon">🎨</div><h3>Beyond the lab</h3><p>Singing, dancing and sketching keep the creative side of my brain active.</p></article>
+  </div>
+</div></section>
+
+<section id="skills"><div class="container">
+  <div class="section-head reveal"><div class="kicker">02 · What I’m building</div><h2>Skills & interests</h2></div>
+  <div class="grid">
+    <article class="card reveal"><div class="icon">🔬</div><h3>Biotech foundation</h3><p>Learning core concepts across biology and biotechnology.</p><div class="pills"><span class="pill">Life Sciences</span><span class="pill">Biotechnology</span><span class="pill">Microbiology</span></div></article>
+    <article class="card reveal"><div class="icon">☕</div><h3>Computer + Java</h3><p>Exploring programming and computational thinking alongside my science background.</p><div class="pills"><span class="pill">Computer Basics</span><span class="pill">Java</span><span class="pill">Problem Solving</span></div></article>
+    <article class="card reveal"><div class="icon">🧠</div><h3>Learning mindset</h3><p>Curious, experimental and always looking for the next skill to add to the toolkit.</p><div class="pills"><span class="pill">Research Mindset</span><span class="pill">Documentation</span><span class="pill">Creativity</span></div></article>
+  </div>
+</div></section>
+
+<section id="projects"><div class="container">
+  <div class="section-head reveal"><div class="kicker">03 · My work</div><h2>Projects in progress</h2><p class="sub">This section will grow with me. New experiments, assignments, ideas and research work will appear here as I complete them.</p></div>
+  <div class="grid">
+    <article class="card project reveal"><div><span class="status">Still working · Coming soon</span><h3>Biotechnology Project 01</h3><p>My first major college project will be documented here — from the question and method to the final learning.</p></div><span class="pill">🧪 Project diary</span></article>
+    <article class="card project reveal"><div><span class="status">Building</span><h3>Science × Technology</h3><p>Exploring how computational skills can complement biotechnology and make scientific work smarter.</p></div><span class="pill">💻 Future project</span></article>
+    <article class="card project reveal"><div><span class="status">Next chapter</span><h3>Research portfolio</h3><p>A growing collection of practical work, posters, presentations and things I learn outside the classroom.</p></div><span class="pill">📚 Learning archive</span></article>
+  </div>
+</div></section>
+
+<section id="lab"><div class="container">
+  <div class="section-head reveal"><div class="kicker">04 · Laboratory</div><h2>Where theory gets messy.</h2><p class="sub">I’m still gaining experience, but these are the practicals that make me genuinely excited to be in a lab.</p></div>
+  <div class="lab">
+    <article class="card reveal"><div class="icon">⚗️</div><h3>Titration</h3><p>I love the precision, colour changes and satisfying moment when everything finally clicks at the endpoint.</p></article>
+    <article class="card reveal"><div class="icon">🧫</div><h3>Agar plating</h3><p>Learning practical microbiology and getting comfortable with the discipline of careful, clean laboratory technique.</p></article>
+  </div>
+</div></section>
+
+<section id="education"><div class="container">
+  <div class="section-head reveal"><div class="kicker">05 · Education</div><h2>My academic journey</h2></div>
+  <div class="timeline">
+    <div class="timeline-item reveal"><h3>BSc Biotechnology</h3><p>Currently pursuing undergraduate studies and building a strong foundation in biotechnology, life sciences and laboratory concepts.</p></div>
+    <div class="timeline-item reveal"><h3>Science background + Computer learning</h3><p>Coming from a science background, I also explored computer fundamentals and programming, including Java.</p></div>
+    <div class="timeline-item reveal"><h3>Science & innovation</h3><p>Participated in <b>Scienovation</b>, an innovative-ideas competition, and finished as <b>1st Runner Up</b>. 🏆</p></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="container">
+  <div class="card reveal" style="padding:45px">
+    <div class="kicker">06 · Contact</div><h2>Let’s build something <span class="gradient">interesting.</span></h2>
+    <p class="sub">Have a project, internship opportunity, science idea or just want to connect? Add your real contact links below.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:YOUR_EMAIL@example.com">Email me ✉</a>
+      <a class="btn" href="https://github.com/gurrazkaur123" target="_blank">GitHub ↗</a>
+      <a class="btn" href="#" onclick="alert('Replace this # with your LinkedIn profile URL.');return false;">LinkedIn ↗</a>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer class="container"><span>© 2026 Gurraz Kaur · Built with curiosity ✨</span><span>Bio × Tech × Magic</span></footer>
+
+<script async src="https://tenor.com/embed.js"></script>
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('show'); });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
